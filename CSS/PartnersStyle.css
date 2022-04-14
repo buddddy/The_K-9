@@ -1,0 +1,165 @@
+@import "../CSS/headerStyle.css";
+@import "../CSS/footerStyle.css";
+@import "../CSS/responsiveStyle.css";
+
+:root {
+    --background: #eba91b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)), url(../Images/Charities.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ebe3de;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.descrip {
+    padding-bottom: 3rem;
+    font-size: 20px;
+    color:white;
+    text-shadow: 0 2px 2px #000;
+}
+
+.center {
+    padding-bottom: 5rem;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.center h1 {
+    text-shadow: 0 2px 2px #000;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.colC-2 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+.cardC {
+    width: 250px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .colC-2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 875px) {
+    .colC-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .colC-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .cardC {
+        height: 140px;
+    }
+}
+
+.colC-2 p,
+.colC-2 h5 {
+    text-shadow: 0 2px 2px #000;
+}
+
+.cardC:hover {
+    transform: translateY(-10px);
+}
+
+.cardC h5 {
+    color: white;
+    font-size: 20px;
+}
+
+.cardC p {
+    color: white;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#c1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/wolf.jpg);
+}
+
+#c2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/dogstrust.jpg);
+}
+
+#c3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/caninecomp.jpg);
+}
+
+#c4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/rspca.jpg);
+}
+
+#c5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/battersea.png);
+}
+
+#c6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/bluecross.jpg);
+}
+
+#c7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/woodgreen.svg);
+}
+
+#c8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/dogsforgood.webp);
+}
+
+#c9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/PDSA.jpg);
+}
+
+#c10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/hoperescue.webp);
+}
+
+#c11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/NAWT.png);
+}
+
+#c12 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/guidedogs.jpg);
+}

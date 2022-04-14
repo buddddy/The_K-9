@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Contacts - The K-9</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap">
+    <link rel="stylesheet" href="../CSS/ContactsStyle.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+        </script>
+    <script src="../JavaScript/include.js"></script>
+    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../JavaScript/raptorize.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>We are based in Manchester, UK and we are eager to hear from you. You can contact us via email, text or call or pop in for a visit at our centre!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>49 Manley Street, Greater Manchester, M7 9EL</p>
+                        <div class="map"><iframe width="300" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.2698032855987553%2C53.50121276665539%2C-2.2556412220001225%2C53.50647723798538&amp;layer=mapnik&amp;marker=53.503845084044265%2C-2.2627222537994385"
+                            style="border: 1px solid black"></iframe><br /><small><a
+                                    href="https://www.openstreetmap.org/#map=18/53.50377/-2.26268">View Larger Map</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+44 07-697-307-232 (United Kingdom)</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-at"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>thek9centre&#8203;@k9org.co.uk</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send us a message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required" placeholder=" ">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="" required="required" placeholder=" ">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>                    
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+        include("header.html", "header");
+        include("footer.html", "footer");
+    </script>
+
+</body>
+
+</html>

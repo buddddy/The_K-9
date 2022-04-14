@@ -1,0 +1,150 @@
+@import "../CSS/headerStyle.css";
+@import "../CSS/footerStyle.css";
+@import "../CSS/responsiveStyle.css";
+
+:root {
+    --background: #eba91b;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 75px;
+    background-color: #ebe3de;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.backgroundC {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../Images/charitydog.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 6%;
+    padding-bottom: 8%;
+    box-sizing: border-box;
+    position:relative;
+}
+
+.rowC {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.colC-1 h1, p {
+    padding-bottom: 40px;
+}
+
+.colC-2 {
+    padding-left: 40px;
+    align-items: center;
+}
+
+.colC-2 p, .colC-2 h5 {
+    text-shadow: 0 2px 2px #000;
+}
+
+.colC-1 {
+    padding-right: 40px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 0 2px 2px #000;
+}
+
+p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    text-shadow: 0 2px 2px #000;
+}
+
+button {
+    width: 180px;
+    margin-top: 30px;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: rgb(189, 62, 62);
+    transition: all 0.4s ease-out;
+}
+
+.cardC {
+    width: 250px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.c1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),  url(../Images/wolf.jpg);
+}
+
+.c2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/dogstrust.jpg);
+}
+
+.c3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/caninecomp.jpg);
+}
+
+.c4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/rspca.jpg);
+}
+
+.cardC:hover {
+    transform: translateY(-10px);
+}
+
+.cardC h5 {
+    color: white;
+    font-size: 20px;
+}
+
+.cardC p {
+    color: white;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 1345px) {
+    .rowC {
+        grid-template-columns: 1fr;
+        padding-bottom: 100px;
+    }
+    .colC-1 {
+        padding-bottom: 25px;
+    }
+}

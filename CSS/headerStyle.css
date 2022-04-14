@@ -1,0 +1,121 @@
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* stay always on top of other elements */
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color:#000;
+}
+
+.nav-toggle:checked ~ nav {
+    transform:scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.shadowAnim {
+    transition: text-shadow 0.4s ease-in-out, transform 0.4s linear;
+}
+
+.shadowAnim:hover {
+    text-shadow: 0 1px 0 hsl(174, 5%, 50%),
+        0 2px 0 hsl(174, 5%, 45%),
+        0 3px 0 hsl(174, 5%, 40%),
+        0 4px 0 hsl(174, 5%, 36%),
+        0 5px 0 hsl(174, 5%, 34%),
+        0 6px 0 hsl(174, 5%, 32%),
+        0 7px 0 hsl(174, 5%, 31%),
+        0 8px 0 hsl(174, 5%, 30%),
+
+        0 0 5px rgba(0, 0, 0, .05),
+        0 1px 3px rgba(0, 0, 0, .2),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .2),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .3);
+
+    transform: translateY(-10px);
+    display: inline-block;
+}
+
+#logo {
+    margin-top: .4rem;
+}

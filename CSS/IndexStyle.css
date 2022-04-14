@@ -1,0 +1,97 @@
+@import "../CSS/headerStyle.css";
+@import "../CSS/footerStyle.css";
+@import "../CSS/responsiveStyle.css";
+
+:root {
+    --background: #eba91b;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../Images/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ebe3de;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+/* beginning of main body contents */
+
+.center {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.center h1 {
+    text-shadow: 0 2px 2px #000;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.center h2 {
+    text-shadow: 0 2px 2px #000;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.center p {
+    text-shadow: 0 2px 2px #000;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.buttons {
+    margin-top: 100px;
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.buttons .button2 {
+    margin-left: 100px;
+}
+
+.buttons button:hover {
+    background-color: rgb(189, 62, 62);
+    transition: all 0.4s ease-out;
+}
+
+
+

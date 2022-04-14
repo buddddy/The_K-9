@@ -1,0 +1,138 @@
+@import "../CSS/headerStyle.css";
+@import "../CSS/footerStyle.css";
+@import "../CSS/responsiveStyle.css";
+
+:root {
+    --background: #eba91b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 120px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    position: relative;
+    background: linear-gradient(to bottom, #9e7620, #c79425);
+}
+
+.center {
+    padding-top: 1rem;
+    padding-bottom: 100px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.center h1 {
+    text-shadow: 0 2px 2px #000;
+    color: white;
+    font-size: 350%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.buttons {
+    margin-top: 100px;
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.buttons .button2 {
+    margin-left: 100px;
+}
+
+.buttons button:hover {
+    background-color: rgb(189, 62, 62);
+    transition: all 0.4s ease-out;
+}
+
+/* FAQ Elements */
+
+#faq {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.faq-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+
+.faq-answer {
+    padding-bottom: .5em;
+    padding-left: 1rem;
+    text-align: left;
+    transition: all .5s ease-in-out;
+}
+
+details > summary {
+    list-style-type: none;
+}
+
+details[open] > summary {
+    list-style-type: none;
+}
+
+details[open] svg {
+    transition: .25s transform ease;
+    transform: rotate(90deg);
+}
+
+details:not([open]) svg {
+    transition: .25s transform ease;
+    transform: none;
+}
+
+summary {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+
+    /* Prevents the text from being selected
+    when the user clicks on it */
+    user-select: none;
+}
+
+details>summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+}
+
+details[open]>summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+}
+
+details * {
+    animation: all 5s ease-in-out;
+}
