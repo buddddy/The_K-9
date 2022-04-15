@@ -1,19 +1,12 @@
+/* Importing header, footer CSS files and their responsiveness on different screen resolutions */
 @import "../CSS/headerStyle.css";
 @import "../CSS/footerStyle.css";
 @import "../CSS/responsiveStyle.css";
-
+/* Declaring a variable colour that will be used throughout website design */
 :root {
     --background: #eba91b;
 }
-
-li.red-heart i.fa-heart {
-    color: rgb(199, 31, 31);
-}
-
-i.fa-heart {
-    z-index: -100;
-}
-
+/* General style choices for the layout of the page */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -35,6 +28,14 @@ body {
     font-weight: 400;
     justify-content: center;
     align-content: center;
+}
+/* Main body contents */
+li.red-heart i.fa-heart {
+    color: rgb(199, 31, 31);
+}
+
+i.fa-heart {
+    z-index: -100;
 }
 
 .title {
@@ -238,8 +239,13 @@ body {
 }
 
 .container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 80px;
     max-width: 1500px;
-    margin: auto;
 }
 
 .row {
@@ -249,4 +255,26 @@ body {
 
 ul {
     list-style-type: none;
+}
+/* Resolution settings for Product images, text and titles */
+@media (max-width: 800px) {
+    .title {
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 20px;
+    }
+
+    .contents {
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+
+    .contents p {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }

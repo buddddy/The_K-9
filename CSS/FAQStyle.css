@@ -1,11 +1,12 @@
+/* Importing header, footer CSS files and their responsiveness on different screen resolutions */
 @import "../CSS/headerStyle.css";
 @import "../CSS/footerStyle.css";
 @import "../CSS/responsiveStyle.css";
-
+/* Declaring a variable colour that will be used throughout website design */
 :root {
     --background: #eba91b;
 }
-
+/* General style choices for the layout of the page */
 *,
 *::before,
 *::after {
@@ -26,7 +27,7 @@ body {
     position: relative;
     background: linear-gradient(to bottom, #9e7620, #c79425);
 }
-
+/* beginning of main body contents */
 .center {
     padding-top: 1rem;
     padding-bottom: 100px;
@@ -70,7 +71,7 @@ body {
     transition: all 0.4s ease-out;
 }
 
-/* FAQ Elements */
+/* FAQ Dropdown Elements */
 
 #faq {
     width: 80%;
@@ -135,4 +136,10 @@ details[open]>summary::after {
 
 details * {
     animation: all 5s ease-in-out;
+}
+/* Resolution settings */
+@media(max-width: 750px) {
+    body {
+        padding-top: 90px;
+    }
 }

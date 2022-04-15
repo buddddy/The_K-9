@@ -86,7 +86,7 @@ ul {
     color: var(--background);
     padding-left: 8px;
 }
-
+/* Social media buttons */
 .rounded-social-buttons {
   text-align: left;
 }
@@ -161,7 +161,7 @@ ul {
   background: #fefefe;
   border-color: #f06c8d;
 }
-
+/* Newsletter signup form */
 #footer-email {
     width: 250px;
     height: 40px;

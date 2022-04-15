@@ -1,11 +1,12 @@
+/* Importing header, footer CSS files and their responsiveness on different screen resolutions */
 @import "../CSS/headerStyle.css";
 @import "../CSS/footerStyle.css";
 @import "../CSS/responsiveStyle.css";
-
+/* Declaring a variable colour that will be used throughout website design */
 :root {
     --background: #eba91b;
 }
-
+/* General style choices for the layout of the page */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -24,7 +25,7 @@ body {
     font-weight: 400;
     position: relative;
 }
-
+/* beginning of main body contents */
 .backgroundC {
     width: 100%;
     height: 100%;
@@ -64,7 +65,7 @@ body {
 
 h1 {
     color: #fff;
-    font-size: 100px;
+    font-size: 500%;
     text-shadow: 0 2px 2px #000;
 }
 
@@ -138,7 +139,7 @@ button {
     padding-top: 10px;
     font-size: 16px;
 }
-
+/* Resolution settings */
 @media (max-width: 1345px) {
     .rowC {
         grid-template-columns: 1fr;
@@ -146,5 +147,39 @@ button {
     }
     .colC-1 {
         padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .rowC {
+        padding-top: 20px;
+    }
+
+    .colC-1 {
+        padding: 0;
+    }
+
+    .backgroundC {
+        padding: 0 3vw;
+        text-align: center;
+    }
+
+    .colC-1 p {
+        padding: 1vh 0;
+    }
+
+    .colC-1 button {
+        margin: 0;
+    }
+
+    .colC-2 {
+        margin-top: 2vh;
+        padding-left: 0;
+    }
+} 
+
+@media (max-width: 500px) {
+    .colC-1 h1 {
+        font-size: 350%;
     }
 }

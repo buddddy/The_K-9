@@ -1,11 +1,12 @@
+/* Importing header, footer CSS files and their responsiveness on different screen resolutions */
 @import "../CSS/headerStyle.css";
 @import "../CSS/footerStyle.css";
 @import "../CSS/responsiveStyle.css";
-
+/* Declaring a variable colour that will be used throughout website design */
 :root {
     --background: #eba91b;
 }
-
+/* General style choices for the layout of the page */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -24,7 +25,7 @@ body {
     font-weight: 400;
     position: relative;
 }
-
+/* beginning of main body contents */
 .contact {
     position: relative;
     min-height: 100vh;
@@ -48,22 +49,6 @@ body {
 
 .map {
     margin-top: 20px;
-}
-
-@media(max-width: 450px) {
-    .map {
-        margin-left: -6rem;
-    }
-
-    .map iframe {
-        width: 80vw;
-    }
-}
-
-@media(max-width: 350px) {
-    .map {
-        margin-left: -7.5rem;
-    }
 }
 
 .map a {
@@ -204,7 +189,7 @@ body {
     cursor: pointer;
     transition: all 0.4s ease-out;
 }
-
+/* Resolution settings for content */
 @media (max-width: 991px) {
     .contact {
         padding: 50px;
@@ -218,4 +203,24 @@ body {
     .container .contactInfo, .contactForm {
         width: 100%;
     }   
+}
+
+@media(max-width: 450px) {
+    .map {
+        margin-left: -6rem;
+    }
+
+    .map iframe {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 350px) {
+    .map {
+        margin-left: -7.5rem;
+    }
+
+    .map iframe {
+        width: 95vw;
+    }
 }

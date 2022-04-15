@@ -90,7 +90,7 @@ nav a:hover {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
-
+/* Text animation for Titles when hovered */
 .shadowAnim {
     transition: text-shadow 0.4s ease-in-out, transform 0.4s linear;
 }
@@ -115,7 +115,7 @@ nav a:hover {
     transform: translateY(-10px);
     display: inline-block;
 }
-
+/* Logo properties */
 #logo {
     margin-top: .4rem;
 }

@@ -1,11 +1,12 @@
+/* Importing header, footer CSS files and their responsiveness on different screen resolutions */
 @import "../CSS/headerStyle.css";
 @import "../CSS/footerStyle.css";
 @import "../CSS/responsiveStyle.css";
-
+/* Declaring a variable colour that will be used throughout website design */
 :root {
     --background: #eba91b;
 }
-
+/* General style choices for the layout of the page */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -68,7 +69,7 @@ body {
 }
 
 .buttons {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .buttons button {
@@ -82,6 +83,7 @@ body {
     outline: none;
     cursor: pointer;
     border-radius: 25px;
+    margin-bottom: 1rem;
 }
 
 .buttons .button2 {
@@ -93,5 +95,30 @@ body {
     transition: all 0.4s ease-out;
 }
 
+/* Changing button appearance on smaller resolution */
+@media (max-width: 450px) {
+    .buttons .button2 {
+        margin-left: 0;
+    }
+}
 
+@media (max-width: 750px) {
+    .center {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 
+    .center h1 {
+        font-size: 50px;
+    }
+
+    .center h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .center p {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+}

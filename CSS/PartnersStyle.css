@@ -1,11 +1,12 @@
+/* Importing header, footer CSS files and their responsiveness on different screen resolutions */
 @import "../CSS/headerStyle.css";
 @import "../CSS/footerStyle.css";
 @import "../CSS/responsiveStyle.css";
-
+/* Declaring a variable colour that will be used throughout website design */
 :root {
     --background: #eba91b;
 }
-
+/* General style choices for the layout of the page */
 *,
 *::before,
 *::after {
@@ -30,7 +31,7 @@ body {
     font-weight: 400;
     position: relative;
 }
-
+/* Beginning of main content */
 .descrip {
     padding-bottom: 3rem;
     font-size: 20px;
@@ -72,28 +73,6 @@ body {
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
-}
-
-@media (max-width: 1200px) {
-    .colC-2 {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width: 875px) {
-    .colC-2 {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .colC-2 {
-        grid-template-columns: 1fr;
-    }
-
-    .cardC {
-        height: 140px;
-    }
 }
 
 .colC-2 p,
@@ -162,4 +141,26 @@ body {
 
 #c12 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(../Images/guidedogs.jpg);
+}
+/* Responsiveness settings */
+@media (max-width: 1200px) {
+    .colC-2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 875px) {
+    .colC-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .colC-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .cardC {
+        height: 140px;
+    }
 }
