@@ -78,15 +78,6 @@ i.fa-heart {
     align-items: center;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    padding: 80px;
-}
-
 .card {
     width: 100%;
     background: #fff;
@@ -239,13 +230,14 @@ i.fa-heart {
 }
 
 .container {
-    position: relative;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-    padding: 80px;
-    max-width: 1500px;
+    padding-bottom: 3rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .row {
